@@ -1,39 +1,26 @@
-# Prueba Técnica para desarrollador Full Stack Web
-![Picture](https://avera.mx/wp-content/uploads/2019/01/avera-logo.webp)
-
-¡Hola! La siguiente prueba busca profundizar en tus conocimientos como desarrollador web enfocado en cuatro tres específicos que necesitamos cubras de manera ágil: 
-
- **1. Wordpress y Woocomerce (PHP y plugins)
- 2. Bases de datos (MySQL)
- 3. Servidores web o nube (AWS, Google, Heroku o Digital Ocean)**
-
-La prueba esta divida en dos partes, esta es la primera la cual consta de práctica donde a continuación te presentaremos requisitos y detalles. Y al final, en una entrevista una serie de preguntas o análisis de casos de uso de un problema real enfocado a stacks tecnológicos. 
-
-Lo que se require es crear un proyecto de woordpress e instalar el plugin de Woocomerce para vender diversos articulos como la siguiente página: https://www.swell.com/products
-
-Puedes copiar los mismos productos, pero mostrar una web parecida donde se puedan visualizar productos con precios, ver detalle de un producto, agregar al carrito y todo el flujo de compra.
+# Documentación para prueba técnica desarrollador Full Stack | Avera
 
 
-### Notas  📋
+1.- Se realizó un clón del repositorio indicado, creando un branch con nombre "AlejandroRuiz"
 
-1. Usar Woocomerce.
-2. Clonar este repositorio e ir subiendo commits. 
-3. Desplegar el proyecto final en cualquier servidor de tu elección para verlo en vivo. (Server y BD)
+2.- Se realizó la instalación de wordpress en el directorio del proyecto
 
+3.- Se creó una app en heroku con el nombre avera-test (http://avera-test.herokuapp.com), para realizar el despligue de la aplicación de wordpress en vivo, sin embargo, ya que wordpress utiliza un contenedor similar a docker, no se puede continuar la instalación, ya que los cambios realizados no son multiseción (esto también ya que heroku está pensado para utlizarse con bases no realaciones como mongoDB, en lugar de interactuar con base relaicones como mySQL)
 
-### Funcionalidades  📋
+4.- se fucionó el branch AlejandroRuiz con el master del proyecto, debido a que heroku solo puede traajar con masters de git
+![Git Log](https://alexestudio86.github.io/avera-test/assets/gitLog.PNG "Git Log")
 
-1. **Catalogo de productos:** Mostrar diferentes productos que tú hayas dado de alta con sus especificaciones.
-2. **Ver producto:** Al dar click en un articulo mostrar detalles, aquí usa el diseño que más te guste. No hay problema. 
-3. **Ver, agregar, editar carrito:** El proyecto debe ser capaz de darle la opción al usuario de agregar o vaciar su carrito de compras. 
-4. **Flujo de compra:** Dejar al usuario completar una compra y visualizarla en la pestaña de pedidos a nivel administrador. 
-5. **Inicio de sesión**
-6. **Inicio de sesión por tipo de usuario (Opcional 👀):** Se requiere tener dos tipos de usuarios, el usuario y la empresa. De modo que se necesita que al momento de que un usuario normal entre en su cuenta se vea de forma general. Pero si soy una empresa, me muestre distintas ofertas o paneles. (Aqui tu puedes ocultar o mostrar funcionalidades de acuerdo a un tipo de usuario). Queda a tu opinión que harias para lograr esto y su explicación. 
+5.- Al no poder proseguir con la instalación de wordpress a través de heroku, se tomó la desición de montar el proyecto en 1&1
 
-### Detalles a tomar en cuenta  📋
-- Agrega diferentes y varios productos
-- Deberás desplegar la web en algún servicio como **Digital Ocean (De preferencia)**, Heroku, Google Cloud, AWS.
-- Para comenzar deberás clonar este repositorio y crear una nueva rama con tu nombre, donde irás trabajando. Cada cambio o avance significativo debe ser subido, se revisarán los commits para comparar y analizar tu ritmo de trabajo. 
-- Entregar una documentación por lo menos básica de tu proyecto, puede ser reemplazando este README.
+6.- Una vez que se instaló wordpress, se añadió un certificado de seguridad
 
-# ¡SUERTE! 💪
+7.- Se implementó la división de precios por usuario, para ver la diferencia es necesario acceder a la sección de cuenta con los siguientes datos:
+https://avera-test.com/mi-cuenta
+user: guest
+pass: averaTesting2022
+
+8.- El resultado final puede ser consultado en https://avera-test.com/tienda
+
+## Observaciones:
+
+Se omitió un poco el diseño del sitio indicado para seguir el ejercicios, ya que el mismo cuenta con elementor instalado, y por ende, se tiene mucho mayor control en el diseño del sitio
